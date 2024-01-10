@@ -16,7 +16,7 @@ nav {
     color: #182B49;
     display: flex;
     justify-content: center;
-    background-color: #FFCD00;
+    background-color: #fff;
     padding: 10px;
 }
 
@@ -25,12 +25,12 @@ nav a {
     padding: 20px 30px;
     border-radius: 5px;
     margin: 0 5px;
-    background-color: #FFCD00;
+    background-color: #fff;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #ccc;
+    background-color: #FFCD00;
 }
 
 section {
