@@ -20,6 +20,7 @@
     margin-right: 160px;
     text-align: justify; /* Justify-align the paragraph */
     padding: 0 10px; /* Add padding on either side of the paragraph */
+    padding-bottom: 20px;
 }
 
 .header {
@@ -36,7 +37,7 @@
     color: #182B49;
     padding: 20px;
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .logo {
@@ -48,7 +49,7 @@
 }
 
 .logo-image {
-    width: 20px; /* Adjust the width as needed */
+    width: 40px; /* Adjust the width as needed */
     margin-right: 5px; /* Adjust the margin as needed */
 }
 
