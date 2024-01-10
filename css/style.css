@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'TitleFont', sans-serif; /* Title font for heading elements */
 }
 
-nav {
+.nav {
     font-family: 'TitleFont', sans-serif; /* Font for the navigation links */
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
@@ -33,6 +33,6 @@ nav a {
     font-family: 'TitleFont', sans-serif; /* Font for individual navigation links */
 }
 
-nav a:hover {
+.nav a:hover {
     background-color: #ccc;
 }
