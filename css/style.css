@@ -1,38 +1,38 @@
-@font-face {
-    font-family: 'TitleFont'; /* Choose a name for your title font */
-    src: url('fonts/Bookerly-Bold.ttf') format('truetype');
-    /* Add additional src lines for different font formats if needed */
-}
-
-@font-face {
-    font-family: 'BodyFont'; /* Choose a name for your body font */
-    src: url('fonts/cmunrm.ttf') format('truetype');
-    /* Add additional src lines for different font formats if needed */
-}
-
 body {
-    font-family: 'BodyFont', sans-serif; /* Default font for the entire document or specific elements */
+    font-family: Bookerly-Bold, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'TitleFont', sans-serif; /* Title font for heading elements */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 nav {
-    font-family: 'TitleFont', sans-serif; /* Font for the navigation links */
+    font-family: Bookerly-Bold, sans-serif;
+    color: #182B49;
+    display: flex;
+    justify-content: center;
+    background-color: #FFCD00;
+    padding: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #b31616;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border-radius: 5px;
     margin: 0 5px;
-    background-color: #0b117c;
+    background-color: #fff;
     transition: background-color 0.3s;
-    font-family: 'TitleFont', sans-serif; /* Font for individual navigation links */
 }
 
 nav a:hover {
     background-color: #ccc;
+}
+
+section {
+    padding: 20px;
 }
