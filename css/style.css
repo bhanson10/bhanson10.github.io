@@ -1,6 +1,6 @@
 .title {
     font-family: "Bookerly-Bold", sans-serif;
-    color: #00629B;
+    color: #182B49;
     font-size: 48px;
     margin-bottom: 10px;
     text-align: center;
@@ -8,7 +8,7 @@
 
 .subtitle {
     font-family: "Bookerly-Bold", sans-serif;
-    color: #00629B;
+    color: #182B49;
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
@@ -46,7 +46,7 @@
 
 .nav {
     font-family: "Bookerly-Bold", sans-serif;
-    color: #00629B;
+    color: #182B49;
     display: flex;
     justify-content: right;
     background-color: #fff;
