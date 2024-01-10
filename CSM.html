@@ -13,29 +13,56 @@
 	<link rel="CSM icon" href="images/CSM_logo.ico">
 
     <style>
-        body {
-            font-family: "CMU-Serif", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+        .title {
+            font-family: "Bookerly-Bold", sans-serif;
+            color: #182B49;
+            font-size: 48px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
-        nav {
-            font-family: Bookerly-Bold, sans-serif;
+        .subtitle {
+            font-family: "Bookerly-Bold", sans-serif;
+            color: #182B49;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .body {
+            font-family: "CMU-Serif", sans-serif;
+            margin-left: 160px;
+            margin-right: 160px;
+            text-align: justify; /* Justify-align the paragraph */
+            padding: 0 10px; /* Add padding on either side of the paragraph */
+        }
+
+        .header {
+            background-color: #fff;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "CMU-Serif", sans-serif;
+            color: #FFCD00;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+       .nav {
+            font-family: "Bookerly-Bold", sans-serif;
             color: #182B49;
             display: flex;
-            justify-content: center;
+            justify-content: right;
             background-color: #fff;
             padding: 10px;
         }
 
-        nav a {
+        .nav a {
             text-decoration: none;
             padding: 20px 30px;
             border-radius: 5px;
@@ -44,25 +71,28 @@
             transition: background-color 0.3s;
         }
 
-        nav a:hover {
+        .nav a:hover {
             background-color: #FFCD00;
         }
 
-        section {
+        .section {
             padding: 20px;
         }
     </style>
 </head>
 <body>
 
-    <nav class="nav"> 
-        <a href="index.html">Home</a>
-        <a href="UCSD.html">UCSD</a>
-        <a href="AFRL_SFFP.html">AFRL SFFP</a>
-        <a href="CSM.html">CSM</a>
-        <a href="UF.html">UF</a>
-        <a href="Publications_Conferences.html">Publications/Conferences</a>
-    </nav>
+    <header class="header">
+        <div class="logo">Colorado School of Mines </div>
+        <nav class="nav"> 
+            <a href="index.html">Home</a>
+            <a href="UCSD.html">UCSD</a>
+            <a href="AFRL_SFFP.html">AFRL SFFP</a>
+            <a href="CSM.html">CSM</a>
+            <a href="UF.html">UF</a>
+            <a href="Publications_Conferences.html">Publications/Conferences</a>
+        </nav>
+     </header>
 
 </body>
 </html>
