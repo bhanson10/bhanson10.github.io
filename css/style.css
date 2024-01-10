@@ -31,6 +31,14 @@
     align-items: center;
 }
 
+.footer {
+    background-color: #C69214;
+    color: #182B49;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: "Bookerly-Bold", sans-serif;
     color: #C69214;
