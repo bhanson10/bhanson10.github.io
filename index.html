@@ -51,12 +51,10 @@
             padding: 20px;
         }
 
-        .image-with-hover {
-            transition: transform 0.3s;
-        }
-
-        .image-with-hover:hover {
-            transform: scale(1.1);
+        .background-image {
+            background-image: url('images/Marathon_Photo.jpg');
+            background-size: cover;
+            /* Add other styles as needed */
         }
     </style>
 </head>
@@ -71,7 +69,9 @@
         <a href="Publications_Conferences.html">Publications/Conferences</a>
     </nav>
 
-    <img src="images/Marathon_Photo.jpg" alt="Description of the image" class="image-with-hover">
+    <div class="background-image">
+        <!-- Content goes here -->
+    </div>
     <!--<img src="images/Marathon_Photo.jpg" alt="Professional photo" style="max-width: 90%;">-->
 
 </body>
