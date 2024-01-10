@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'TitleFont'; /* Choose a name for your title font */
+    src: url('path/to/title_font.woff') format('woff');
+    /* Add additional src lines for different font formats if needed */
+}
+
+@font-face {
+    font-family: 'BodyFont'; /* Choose a name for your body font */
+    src: url('path/to/body_font.woff') format('woff');
+    /* Add additional src lines for different font formats if needed */
+}
+
+body {
+    font-family: 'BodyFont', sans-serif; /* Default font for the entire document or specific elements */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'TitleFont', sans-serif; /* Title font for heading elements */
+}
