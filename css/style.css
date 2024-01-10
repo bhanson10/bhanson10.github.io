@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'TitleFont'; /* Choose a name for your title font */
-    src: url('path/to/title_font.woff') format('woff');
+    src: url('fonts/Bookerly-Bold.ttf') format('truetype');
     /* Add additional src lines for different font formats if needed */
 }
 
 @font-face {
     font-family: 'BodyFont'; /* Choose a name for your body font */
-    src: url('path/to/body_font.woff') format('woff');
+    src: url('fonts/cmunrm.ttf') format('truetype');
     /* Add additional src lines for different font formats if needed */
 }
 
