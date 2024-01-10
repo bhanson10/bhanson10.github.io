@@ -16,7 +16,7 @@
         .title {
             font-family: Bookerly-Bold, sans-serif;
             color: #182B49;
-            font-size: 24px;
+            font-size: 48px;
             margin-bottom: 10px;
             text-align: center;
         }
@@ -24,35 +24,42 @@
         .subtitle {
             font-family: Bookerly-Bold, sans-serif;
             color: #182B49;
-            font-size: 18px;
+            font-size: 36px;
             margin-bottom: 20px;
             text-align: center;
         }
 
-        body {
+        .body {
             font-family: "CMU-Serif", sans-serif;
-            margin: 0 auto 40px;
+            margin: 0;
             text-align: justify; /* Justify-align the paragraph */
             padding: 20px 0; /* Add padding on either side of the paragraph */
         }
 
-        header {
+        .header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
 
-        nav {
+        .logo {
+            font-family: Bookerly-Bold, sans-serif;
+            color: #182B49;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+       .nav {
             font-family: Bookerly-Bold, sans-serif;
             color: #182B49;
             display: flex;
-            justify-content: center;
+            justify-content: right;
             background-color: #fff;
             padding: 10px;
         }
 
-        nav a {
+        .nav a {
             text-decoration: none;
             padding: 20px 30px;
             border-radius: 5px;
@@ -61,25 +68,28 @@
             transition: background-color 0.3s;
         }
 
-        nav a:hover {
+        .nav a:hover {
             background-color: #FFCD00;
         }
 
-        section {
+        .section {
             padding: 20px;
         }
     </style>
 </head>
 <body>
 
-    <nav class="nav"> 
-        <a href="index.html">Home</a>
-        <a href="UCSD.html">UCSD</a>
-        <a href="AFRL_SFFP.html">AFRL SFFP</a>
-        <a href="CSM.html">CSM</a>
-        <a href="UF.html">UF</a>
-        <a href="Publications_Conferences.html">Publications/Conferences</a>
-    </nav>
+    <header>
+        <div class="logo">Home </div>
+        <nav class="nav"> 
+            <a href="index.html">Home</a>
+            <a href="UCSD.html">UCSD</a>
+            <a href="AFRL_SFFP.html">AFRL SFFP</a>
+            <a href="CSM.html">CSM</a>
+            <a href="UF.html">UF</a>
+            <a href="Publications_Conferences.html">Publications/Conferences</a>
+        </nav>
+     </header>
 
     <img src="images/Marathon_Photo.jpg" alt="Professional photo" style="max-width: 100%;">
 
