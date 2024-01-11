@@ -76,7 +76,7 @@
       html2canvas(document.getElementById('image-container')).then(function(canvas) {
         var link = document.createElement("a");
         document.body.appendChild(link);
-        link.download = 'overlayed_image.png';
+        link.download = 'CM_Album_Cover.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         document.body.removeChild(link);
