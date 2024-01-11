@@ -27,16 +27,16 @@
 </head>
 <body>
 
-  <h1>Text Overlay Generator</h1>
+  <h1>Cash-Money Album Cover Generator Generator</h1>
+
+  <label for="sentence">Album Title:</label>
+  <input type="text" id="sentence" maxlength="15">
+  <button onclick="addText()">Add</button>
 
   <div id="image-container">
     <img id="image" src="images/CM.jpg" alt="Your Image">
     <div id="text-overlay"></div>
   </div>
-
-  <label for="sentence">Enter your sentence:</label>
-  <input type="text" id="sentence" maxlength="15">
-  <button onclick="addText()">Add</button>
 
   <script>
     function addText() {
