@@ -12,11 +12,11 @@
 
     #text-overlay {
       position: absolute;
-      left: 80%;
-      top: 30%;
-      transform: translate(-50%, -50%) rotate(-5deg);
+      left: 30%;
+      top: 25%;
+      transform: translate(-50%, -50%) rotate(-3deg);
       font-family: Georgia, serif;
-      font-size: 24pt;
+      font-size: 18pt;
       color: #f6f2c1; /* Default color */
     }
 
@@ -43,10 +43,11 @@
   <input type="text" id="sentence" maxlength="30">
   <button onclick="addText()">Add</button> <br>
 
-  <label for="addRectangle">Witness Protection</label>
+  <label for="addRectangle">Witness Protection: </label>
   <input type="checkbox" id="addRectangle">
 
-  <button onclick="addRectangle()">Add Rectangle</button> <br>
+  <label for="addRectangle">Add Rectangle</label>
+  <input type="checkbox" id="addRectangle" onchange="toggleRectangle()">
 
   <div id="image-container">
     <img id="image" src="images/CM.jpg" alt="Your Image">
@@ -60,7 +61,7 @@
       textOverlay.innerHTML = sentence;
     }
 
-    function addRectangle() {
+    function toggleRectangle() {
       const addRectangleCheckbox = document.getElementById('addRectangle');
       const rectangleOverlay = document.getElementById('rectangle-overlay');
 
