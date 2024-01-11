@@ -9,7 +9,6 @@
     #image-container {
       position: relative;
       display: inline-block;
-      margin-bottom: -20px;
     }
 
     #text-overlay {
@@ -44,6 +43,33 @@
       width: 100px;
       height: auto;
       display: none; /* Initially hidden */
+    }
+
+    @media (max-width: 768px) {
+        #rectangle-overlay {
+            position: absolute;
+            left: 59.9%; /* Default left position for the rectangle */
+            top: 38.5%; /* Default top position for the rectangle */
+            width: 40px; /* Default width of the rectangle */
+            height: 15px; /* Default height of the rectangle */
+            background-color: #000000; /* Default color of the rectangle */
+            display: none; /*Initially hidden */
+        }
+
+        #original-image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Adjust styles for smaller screens (e.g., mobile devices) */
+        #overlay-image {
+        position: absolute;
+        left: 1%;
+        top: 88%;
+        width: 100px;
+        height: auto;
+        display: none; /* Initially hidden */
+        }
     }
 
     #text-input {
