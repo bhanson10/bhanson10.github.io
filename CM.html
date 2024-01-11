@@ -12,11 +12,12 @@
 
     #text-overlay {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%) rotate(5deg);
+      left: 60%;
+      top: 40%;
+      transform: translate(-50%, -50%) rotate(-5deg);
       font-family: Georgia, serif;
-      font-size: 12pt;
+      font-size: 24pt;
+      color: #f6f2c1; /* Default color */
     }
 
     #text-input {
@@ -34,7 +35,7 @@
   </div>
 
   <label for="sentence">Enter your sentence:</label>
-  <input type="text" id="sentence" maxlength="50">
+  <input type="text" id="sentence" maxlength="15">
   <button onclick="addText()">Add</button>
 
   <script>
