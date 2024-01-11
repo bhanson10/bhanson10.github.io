@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Overlay Generator</title>
+  <title>Cash-Money Album Cover Generator Generator</title>
   <style>
     #image-container {
       position: relative;
@@ -13,7 +13,7 @@
     #text-overlay {
       position: absolute;
       left: 30%;
-      top: 25%;
+      top: 30%;
       transform: translate(-50%, -50%) rotate(-3deg);
       font-family: Georgia, serif;
       font-size: 18pt;
@@ -24,8 +24,8 @@
       position: absolute;
       left: 30%; /* Default left position for the rectangle */
       top: 30%; /* Default top position for the rectangle */
-      width: 100px; /* Default width of the rectangle */
-      height: 50px; /* Default height of the rectangle */
+      width: 1000px; /* Default width of the rectangle */
+      height: 500px; /* Default height of the rectangle */
       background-color: #000000; /* Default color of the rectangle */
       display: none; /* Initially hidden */
     }
@@ -44,9 +44,6 @@
   <button onclick="addText()">Add</button> <br>
 
   <label for="addRectangle">Witness Protection: </label>
-  <input type="checkbox" id="addRectangle">
-
-  <label for="addRectangle">Add Rectangle</label>
   <input type="checkbox" id="addRectangle" onchange="toggleRectangle()">
 
   <div id="image-container">
