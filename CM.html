@@ -31,13 +31,18 @@
       display: none; /*Initially hidden */
     }
 
+    #original-image {
+      max-width: 100%;
+      height: auto;
+    }
+
     #overlay-image {
       position: absolute;
-      bottom: 10px; /* Adjust the bottom offset as needed */
-      right: 10px; /* Adjust the right offset as needed */
-      width: 100px; /* Adjust the width as needed */
+      bottom: 10px;
+      right: 10px;
+      width: 100px;
       height: auto;
-      display: none; /*Initially hidden */
+      display: none; /* Initially hidden */
     }
 
     #text-input {
@@ -62,10 +67,11 @@
   <button onclick="saveImage()">Save That Shit</button><br><br>
 
   <div id="image-container">
-    <img id="image" src="images/CM.jpg" alt="Your Image">
+    <img id="original-image" src="images/CM.jpg" alt="Original Image">
+    <img id="overlay-image" src="images/PA.png" alt="Overlay Image">
+    <!--<img id="image" src="images/CM.jpg" alt="Your Image">-->
     <div id="text-overlay"></div>
     <div id="rectangle-overlay"></div>
-    <div id="overlay-image"></div>  
   </div>
 
   <script>
