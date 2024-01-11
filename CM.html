@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Overlay Generator</title>
+  <style>
+    #image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    #text-overlay {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(5deg);
+      font-family: Georgia, serif;
+      font-size: 12pt;
+    }
+
+    #text-input {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Text Overlay Generator</h1>
+
+  <div id="image-container">
+    <img id="image" src="path/to/your/image.jpg" alt="Your Image">
+    <div id="text-overlay"></div>
+  </div>
+
+  <label for="sentence">Enter your sentence:</label>
+  <input type="text" id="sentence" maxlength="50">
+  <button onclick="addText()">Add</button>
+
+  <script>
+    function addText() {
+      const sentence = document.getElementById('sentence').value;
+      const textOverlay = document.getElementById('text-overlay');
+      textOverlay.innerHTML = sentence;
+    }
+  </script>
+</body>
+</html>
