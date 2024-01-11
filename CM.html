@@ -46,12 +46,21 @@
     }
 
     @media (max-width: 768px) {
+        #text-overlay {
+            position: absolute;
+            left: 30%;
+            top: 35%;
+            transform: translate(-50%, -50%) rotate(-2deg);
+            font-family: Georgia, serif;
+            font-size: 12pt;
+            color: #f6f2c1; /* Default color */
+        }
         #rectangle-overlay {
             position: absolute;
             left: 59.9%; /* Default left position for the rectangle */
             top: 38.5%; /* Default top position for the rectangle */
-            width: 25px; /* Default width of the rectangle */
-            height: 10px; /* Default height of the rectangle */
+            width: 22px; /* Default width of the rectangle */
+            height: 8px; /* Default height of the rectangle */
             background-color: #000000; /* Default color of the rectangle */
             display: none; /*Initially hidden */
         }
@@ -65,7 +74,7 @@
         #overlay-image {
         position: absolute;
         left: 1%;
-        top: 8%;
+        top: 80%;
         width: 70px;
         height: auto;
         display: none; /* Initially hidden */
