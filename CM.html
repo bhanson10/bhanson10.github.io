@@ -31,6 +31,15 @@
       display: none; /*Initially hidden */
     }
 
+    #overlay-image {
+      position: absolute;
+      bottom: 10px; /* Adjust the bottom offset as needed */
+      right: 10px; /* Adjust the right offset as needed */
+      width: 100px; /* Adjust the width as needed */
+      height: auto;
+      display: none; /*Initially hidden */
+    }
+
     #text-input {
       margin-top: 10px;
     }
@@ -46,12 +55,17 @@
 
   <label for="addRectangle">Witness Protection: </label>
   <input type="checkbox" id="addRectangle" onchange="toggleRectangle()"><br>
+
+  <label for="addOverlay">Parental Advisory: </label>
+  <input type="checkbox" id="addOverlay" onchange="toggleOverlay()"><br>
+
   <button onclick="saveImage()">Save That Shit</button><br><br>
 
   <div id="image-container">
     <img id="image" src="images/CM.jpg" alt="Your Image">
     <div id="text-overlay"></div>
     <div id="rectangle-overlay"></div>
+    <div id="overlay-image"></div>  
   </div>
 
   <script>
@@ -69,6 +83,17 @@
         rectangleOverlay.style.display = 'block';
       } else {
         rectangleOverlay.style.display = 'none';
+      }
+    }
+
+    function toggleOverlay() {
+      const addOverlayCheckbox = document.getElementById('addOverlay');
+      const overlayImage = document.getElementById('overlay-image');
+
+      if (addOverlayCheckbox.checked) {
+        overlayImage.style.display = 'block';
+      } else {
+        overlayImage.style.display = 'none';
       }
     }
 
