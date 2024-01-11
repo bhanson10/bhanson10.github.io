@@ -45,6 +45,33 @@
       display: none; /* Initially hidden */
     }
 
+    @media (max-width: 768px) {
+        /* Adjust styles for smaller screens (e.g., mobile devices) */
+        #overlay-image {
+        width: 50px; /* Adjust the width for smaller screens */
+        bottom: 5px; /* Adjust the bottom position for smaller screens */
+        right: 5px; /* Adjust the right position for smaller screens */
+        }
+        #text-overlay {
+        position: absolute;
+        left: 30%;
+        top: 35%;
+        transform: translate(-50%, -50%) rotate(-2deg);
+        font-family: Georgia, serif;
+        font-size: 18pt;
+        color: #f6f2c1; /* Default color */
+        }
+        #rectangle-overlay {
+        position: absolute;
+        left: 59.9%; /* Default left position for the rectangle */
+        top: 38.5%; /* Default top position for the rectangle */
+        width: 40px; /* Default width of the rectangle */
+        height: 15px; /* Default height of the rectangle */
+        background-color: #000000; /* Default color of the rectangle */
+        display: none; /*Initially hidden */
+        }
+    }
+
     #text-input {
       margin-top: 10px;
     }
