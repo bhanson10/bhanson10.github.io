@@ -14,7 +14,7 @@
       position: absolute;
       left: 30%;
       top: 35%;
-      transform: translate(-50%, -50%) rotate(-3deg);
+      transform: translate(-50%, -50%) rotate(-2deg);
       font-family: Georgia, serif;
       font-size: 18pt;
       color: #f6f2c1; /* Default color */
@@ -24,10 +24,10 @@
       position: absolute;
       left: 30%; /* Default left position for the rectangle */
       top: 30%; /* Default top position for the rectangle */
-      width: 1000px; /* Default width of the rectangle */
-      height: 500px; /* Default height of the rectangle */
+      width: 100px; /* Default width of the rectangle */
+      height: 50px; /* Default height of the rectangle */
       background-color: #000000; /* Default color of the rectangle */
-      /*display: none; Initially hidden */
+      display: none; /*Initially hidden */
     }
 
     #text-input {
@@ -40,8 +40,8 @@
   <h1>Cash-Money Album Cover Generator Generator</h1>
 
   <label for="sentence">Album Title:</label>
-  <input type="text" id="sentence" maxlength="30">
-  <button onclick="addText()">Add</button> <br>
+  <input type="text" id="sentence" maxlength="35">
+  <button onclick="addText()">Add</button> <br><br>
 
   <label for="addRectangle">Witness Protection: </label>
   <input type="checkbox" id="addRectangle" onchange="toggleRectangle()"><br>
@@ -49,6 +49,7 @@
   <div id="image-container">
     <img id="image" src="images/CM.jpg" alt="Your Image">
     <div id="text-overlay"></div>
+    <div id="rectangle-overlay"></div>
   </div>
 
   <script>
