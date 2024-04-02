@@ -85,3 +85,11 @@
 .section {
     padding: 20px;
 }
+
+.container {
+    display: flex;
+  }
+  
+  .container video {
+    width: 40%;
+  }
