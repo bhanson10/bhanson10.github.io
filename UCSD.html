@@ -16,6 +16,28 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+    <title>Video Player</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #video-container {
+            position: relative;
+            max-width: 800px; /* Adjust as needed */
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 
@@ -35,7 +57,45 @@
      </header>
 
     <div class="title">Stationary/Non-stationary Probabilistic Search</div>
-    <div class="subtitle">Coming soon...</div>
+    <div id="video-container">
+        <video autoplay loop>
+            <source src="./Animations/Prob_Search/GGD_Demo.mp4" type="video/mp4">
+            <!-- Add other video formats as needed -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script>
+        // Function to check if the video is in the viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    
+        // Function to check if the video is visible and play it
+        function checkVideoVisible() {
+            var video = document.querySelector('video');
+            if (isElementInViewport(video)) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    
+        // Check if the video is visible on page load
+        checkVideoVisible();
+    
+        // Check if the video is visible when scrolling
+        window.addEventListener('scroll', function() {
+            checkVideoVisible();
+        });
+    </script>
+
     <div class="title">State Estimation of Chaotic Trajectories: A Higher-Dimensional, Grid-Based, Bayesian Approach to Uncertainty Propagation</div>
 </body>
 
