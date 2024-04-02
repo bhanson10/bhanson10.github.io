@@ -86,11 +86,20 @@
     padding: 20px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .container video {
-    width: 40%;
-  }
+.video-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* This centers the container horizontally */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items along the main axis */
+    align-items: center; /* Align items vertically */
+}
+
+.video {
+    width: 45%; /* Adjust width as needed */
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
