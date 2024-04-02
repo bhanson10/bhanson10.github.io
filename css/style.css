@@ -86,20 +86,20 @@
     padding: 20px;
 }
 
-.container-2 {
+.containertwo {
     display: flex;
     justify-content: center;
 }
 
-.container-2 video {
-width: 40%;
+.containertwo video {
+    width: 40%;
+}   
+
+.containerthree {
+    display: flex;
+    justify-content: center;
 }
 
-.container-3 {
-display: flex;
-justify-content: center;
-}
-
-.container-3 video {
-width: 27%;
+.containerthree video {
+    width: 27%;
 }
