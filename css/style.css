@@ -69,6 +69,19 @@
     padding: 10px;
 }
 
+.nav a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #C69214;
+}
+
 /* Style for the navigation menu */
 .nav ul {
     list-style-type: none;
