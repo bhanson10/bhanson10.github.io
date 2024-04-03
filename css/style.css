@@ -167,3 +167,23 @@
 .container3 video {
     width: 27%;
 }
+
+#password-form {
+    margin: 100px auto;
+    width: 300px;
+    text-align: center;
+}
+
+#password-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

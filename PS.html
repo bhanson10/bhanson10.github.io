@@ -19,99 +19,122 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <img src="images/UCSD_logo.png" alt="UCSD-logo" class="logo-image">
-            University of California San Diego
+    <div id="password-form">
+        <h2>Please enter the password to access the content:</h2>
+        <form id="password-form">
+            <input type="password" id="password-input" placeholder="Enter password" required>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <div id="content" style="display: none;">
+        <header class="header">
+            <div class="logo">
+                <img src="images/UCSD_logo.png" alt="UCSD-logo" class="logo-image">
+                University of California San Diego
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="PS.html">UCSD</a>
+                        <ul>
+                            <li><a href="PS.html"> Probabilistic Search</a></li>
+                            <li><a href="NSE.html"> Nonlinear State Estimation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="AFRL.html">AFRL</a></li>
+                    <li><a href="CSM.html">CSM</a></li>
+                    <li><a href="UF.html">UF</a></li>
+                    <li><a href="Publications_Conferences.html">Publications/Conferences</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="title">Probabilistic Search</div>
+        <br>
+        <p class="body">
+            This page is meant to accompany the manuscript "An Extensible Framework for Probabilistic Search of Stochastic Targets Characterized by Generalized Gaussian Distributions or Experimentally-defined Regions of Interest". The animations serve as supplementary material to provide context to many of the figures in the manuscript that were sourced from said animations. All code for the animations can be found at the Github link down below. <br><br>
+        </p>
+        <div class="subtitle">Generalized Gaussian Distributions</div>
+        <p class="body">
+            The below video is a short tutorial demonstrating the formulation and features of the Generalized Gaussian Distribution, both with and without anisotropic flatness. <br><br>
+        </p>
+        <center>
+            <video style="outline:none; width:75%; height:75%;" controls>
+                <source src="./Animations/Prob_Search/GGD_Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>   
+        <br><br><br>
+
+        <div class="subtitle">Relaxation Advection</div>
+        <p class="body">
+            Figures 13 and 14 are derived from the left and right animations, respectively. <br><br>
+        </p>
+        <div class="container2">
+            <video src="./Animations/Prob_Search/Gauss_1_top_2D.mp4" controls></video>
+            <video src="./Animations/Prob_Search/Gauss_2_top_2D.mp4" controls></video>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="PS.html">UCSD</a>
-                    <ul>
-                        <li><a href="PS.html"> Probabilistic Search</a></li>
-                        <li><a href="NSE.html"> Nonlinear State Estimation</a></li>
-                    </ul>
-                </li>
-                <li><a href="AFRL.html">AFRL</a></li>
-                <li><a href="CSM.html">CSM</a></li>
-                <li><a href="UF.html">UF</a></li>
-                <li><a href="Publications_Conferences.html">Publications/Conferences</a></li>
-            </ul>
-        </nav>
-    </header>
+        <br><br><br>
+        <p class="body">
+            Figures 15, 16, and 17 are derived from the left, middle, and right animations, respectively. <br><br>
+        </p>
+        <div class="container3">
+            <video src="./Animations/Prob_Search/alpha_top_2D.mp4" controls></video>
+            <video src="./Animations/Prob_Search/kde_den_top_2D.mp4" controls></video>
+            <video src="./Animations/Prob_Search/kde_lake_top_2D.mp4" controls></video>
+        </div>
+        <br><br><br>
 
-    <div class="title">Probabilistic Search</div>
-    <br>
-    <p class="body">
-        This page is meant to accompany the manuscript "An Extensible Framework for Probabilistic Search of Stochastic Targets Characterized by Generalized Gaussian Distributions or Experimentally-defined Regions of Interest". The animations serve as supplementary material to provide context to many of the figures in the manuscript that were sourced from said animations. All code for the animations can be found at the Github link down below. <br><br>
-    </p>
-    <div class="subtitle">Generalized Gaussian Distributions</div>
-    <p class="body">
-        The below video is a short tutorial demonstrating the formulation and features of the Generalized Gaussian Distribution, both with and without anisotropic flatness. <br><br>
-    </p>
-    <center>
-        <video style="outline:none; width:75%; height:75%;" controls>
-            <source src="./Animations/Prob_Search/GGD_Demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </center>   
-    <br><br><br>
+        <div class="subtitle">Non-evasive search</div>
+        <p class="body">
+            The top, middle, and bottom subfigures of Figure 18 are derived from the top, middle, and bottom animations, respectively. <br><br>
+        </p>
+        <center>
+            <video style="outline:none; width:75%; height:75%;" controls>
+                <source src="./Animations/Prob_Search/non-evasive_search_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>  
+        <center>
+            <video style="outline:none; width:75%; height:75%;" controls>
+                <source src="./Animations/Prob_Search/non-evasive_search_0.5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>  
+        <center>
+            <video style="outline:none; width:75%; height:75%;" controls>
+                <source src="./Animations/Prob_Search/non-evasive_search_0.25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>  
+        <br><br><br>
 
-    <div class="subtitle">Relaxation Advection</div>
-    <p class="body">
-        Figures 13 and 14 are derived from the left and right animations, respectively. <br><br>
-    </p>
-    <div class="container2">
-        <video src="./Animations/Prob_Search/Gauss_1_top_2D.mp4" controls></video>
-        <video src="./Animations/Prob_Search/Gauss_2_top_2D.mp4" controls></video>
+        <div class="subtitle">Evasive Search</div>
+        <p class="body">
+            The top, middle, and bottom subfigures of Figure 19 are derived from this animation. <br><br>
+        </p>
+        <center>
+            <video style="outline:none; width:75%; height:75%;" controls>
+                <source src="./Animations/Prob_Search/evasive_search_rotating.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>   
+        <br><br><br>
     </div>
-    <br><br><br>
-    <p class="body">
-        Figures 15, 16, and 17 are derived from the left, middle, and right animations, respectively. <br><br>
-    </p>
-    <div class="container3">
-        <video src="./Animations/Prob_Search/alpha_top_2D.mp4" controls></video>
-        <video src="./Animations/Prob_Search/kde_den_top_2D.mp4" controls></video>
-        <video src="./Animations/Prob_Search/kde_lake_top_2D.mp4" controls></video>
-    </div>
-    <br><br><br>
 
-    <div class="subtitle">Non-evasive search</div>
-    <p class="body">
-        The top, middle, and bottom subfigures of Figure 18 are derived from the top, middle, and bottom animations, respectively. <br><br>
-    </p>
-    <center>
-        <video style="outline:none; width:75%; height:75%;" controls>
-            <source src="./Animations/Prob_Search/non-evasive_search_1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </center>  
-    <center>
-        <video style="outline:none; width:75%; height:75%;" controls>
-            <source src="./Animations/Prob_Search/non-evasive_search_0.5.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </center>  
-    <center>
-        <video style="outline:none; width:75%; height:75%;" controls>
-            <source src="./Animations/Prob_Search/non-evasive_search_0.25.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </center>  
-    <br><br><br>
 
-    <div class="subtitle">Evasive Search</div>
-    <p class="body">
-        The top, middle, and bottom subfigures of Figure 19 are derived from this animation. <br><br>
-    </p>
-    <center>
-        <video style="outline:none; width:75%; height:75%;" controls>
-            <source src="./Animations/Prob_Search/evasive_search_rotating.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </center>   
-    <br><br><br>
+    <script>
+        document.getElementById("submit-button").addEventListener("click", function() {
+            var password = document.getElementById("password-input").value;
+            if (password === "FCCR") {
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        });
+    </script>
 </body>
 
 <footer class="footer">
