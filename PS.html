@@ -41,13 +41,15 @@
         </nav>
     </header>
 
-    <div id="password-form">
+    <input id="myInput" value="Some text..">
+    <button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+    <!-- <div id="password-form">
         <h2>Please enter password to access content:</h2>
         <form id="password-form">
             <input type="password" id="password-input" placeholder="Enter password" required>
             <button type="button" id="submit-button">Submit</button>
         </form>
-    </div>
+    </div> -->
 
     <div id="content" style="display: none;">
         <div class="title">Probabilistic Search</div>
@@ -124,6 +126,15 @@
     </div>
 
     <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+          }
+        });
+    </script>
+    <!-- <script>
         document.getElementById("submit-button").addEventListener("click", submitPassword); 
         document.getElementById("submit-button").addEventListener("keypress", submitPassword2(event)); 
 
@@ -149,7 +160,7 @@
                 }
             }
         }
-    </script>
+    </script> -->
 
 </body>
 
