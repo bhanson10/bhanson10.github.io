@@ -33,7 +33,7 @@
 
     nav ul li {
         display: inline;
-        margin-top: 20px; /* Add margin-top to create space between dropdown options */
+        margin-top: 30px; /* Add margin-top to create space between dropdown options */
     }
 
     nav ul li a {
@@ -56,14 +56,14 @@
     nav ul li ul {
         display: none;
         position: absolute;
-        background-color: #333;
+        background-color: #fff;
         padding: 0;
-        width: 300px; /* Set a fixed width for the dropdown menu */
+        width: 150px; /* Set a fixed width for the dropdown menu */
     }
 
     nav ul li ul li {
         display: block;
-        margin-top: 20px; /* Add margin-top to create space between dropdown options */
+        margin-top: 30px; /* Add margin-top to create space between dropdown options */
     }
 
     nav ul li ul li a {
@@ -73,6 +73,11 @@
         margin: 0 5px;
         background-color: #fff;
         transition: background-color 0.3s;
+        text-decoration: none;
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+        font-size: 14px; /* Adjust font size as needed */
     }
 
     nav ul li ul li a:hover {
@@ -82,23 +87,27 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a href="test.html">UCSD</a>
-                <ul>
-                    <li><a href="AFRL.html"> Probabilistic Search</a></li>
-                    <li><a href="UCSD.html"> Probabilistic Search</a></li>
-                    <li><a href="CSM.html"> Probabilistic Search</a></li>
-                </ul>
-            </li>
-            <li><a href="AFRL.html">Home</a></li>
-            <li><a href="UCSD.html">About</a></li>
-            <li><a href="CSM.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Pillars-of-creation.png" alt="Pillars-of-creation" class="logo-image">
+            Home 
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <a href="test.html">UCSD</a>
+                    <ul>
+                        <li><a href="AFRL.html"> Probabilistic Search</a></li>
+                        <li><a href="UCSD.html"> Nonlinear State Estimation</a></li>
+                    </ul>
+                </li>
+                <li><a href="AFRL.html">AFRL</a></li>
+                <li><a href="CSM.html">CSM</a></li>
+                <li><a href="UF.html">UF</a></li>
+                <li><a href="Publications_Conferences.html">Publications/Conferences</a></li>
+            </ul>
+        </nav>
+    </header>
 
 <!-- Your content goes here -->
 
