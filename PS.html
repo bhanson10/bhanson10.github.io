@@ -41,19 +41,13 @@
         </nav>
     </header>
 
-    <form onSubmit = "showPass(this , event)">
-        Password:
-        <input type = "password" name = "pwd" /> 
-        <input type = "submit" value = "Log In" />
-    </form>
-
-    <!-- <div id="password-form">
+    <div id="password-form">
         <h2>Please enter password to access content:</h2>
         <form id="password-form">
             <input type="password" id="password-input" placeholder="Enter password" required>
             <button type="button" id="submit-button">Submit</button>
         </form>
-    </div> -->
+    </div>
 
     <div id="content" style="display: none;">
         <div class="title">Probabilistic Search</div>
@@ -129,23 +123,6 @@
         <br><br><br>
     </div>
 
-    <script>
-        function showPass(form , e){
-            e.preventDefault();
-            var pass = form.pwd.value;
-            var pass1 = "FCCR";
-            alert(pass);
-            if(pass == pass1 || pass == pass1)
-            {
-                document.getElementById("password-form").style.display = "none";
-                document.getElementById("content").style.display = "block";
-            }
-            else{
-                alert("Incorrect password. Please try again.");
-            }
-        }
-    </script>
-
     <!-- <script>
         document.getElementById("submit-button").addEventListener("click", submitPassword);
         document.getElementById("password-input").addEventListener("keypress", function(event) {
@@ -155,7 +132,8 @@
             }
         });
     
-        function submitPassword() {
+        function submitPassword(event) {
+            event.preventDefault(); // Prevent default form submission
             var password = document.getElementById("password-input").value;
             // Replace "yourpassword" with your actual password
             if (password === "FCCR") {
@@ -167,7 +145,7 @@
         }
     </script> -->
 
-    <!-- <script>
+    <script>
         document.getElementById("submit-button").addEventListener("click", function() {
             var password = document.getElementById("password-input").value;
             if (password === "FCCR") {
@@ -177,7 +155,7 @@
                 alert("Incorrect password. Please try again.");
             }
         });
-    </script> -->
+    </script>
 
 </body>
 
