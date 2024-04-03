@@ -43,11 +43,19 @@
 
     <div id="password-form">
         <h2>Please enter password to access content:</h2>
-        <form id="password-form">
+        <form onSubmit = "showPass(this , event)">
             <input type="password" id="password-input" placeholder="Enter password" required>
             <button type="button" id="submit-button">Submit</button>
         </form>
     </div>
+
+    <!-- <div id="password-form">
+        <h2>Please enter password to access content:</h2>
+        <form id="password-form">
+            <input type="password" id="password-input" placeholder="Enter password" required>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+    </div> -->
 
     <div id="content" style="display: none;">
         <div class="title">Probabilistic Search</div>
@@ -123,10 +131,25 @@
         <br><br><br>
     </div>
 
-
     <script>
+        function showPass(form , e){
+            e.preventDefault();
+            var pass = form.pwd.value;
+            var pass1 = "FCCR";
+            if(pass == pass1 || pass == pass1)
+            {
+                 alert("Incorrect password. Please try again.");
+            }
+            else{
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }
+        }
+        
+    </script>
+    <!-- <script>
         document.getElementById("submit-button").addEventListener("click", submitPassword);
-        document.getElementById("password-input").addEventListener("keyup", function(event) {
+        document.getElementById("password-input").addEventListener("keypress", function(event) {
             if (event.key === "Enter") {
                 event.preventDefault(); // Prevent default form submission
                 submitPassword();
@@ -143,7 +166,7 @@
                 alert("Incorrect password. Please try again.");
             }
         }
-    </script>
+    </script> -->
 
     <!-- <script>
         document.getElementById("submit-button").addEventListener("click", function() {
