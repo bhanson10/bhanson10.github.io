@@ -23,6 +23,7 @@
     padding-bottom: 20px;
 }
 
+/* Style for the header */
 .header {
     background-color: #fff;
     color: #fff;
@@ -30,34 +31,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer {
-    background-color: #C69214;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    align-items: center;
- }
-
-.footer-buttons {
-    color: #182B49;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 24px;
-}
-
-.logo {
-    font-family: "Bookerly-Bold", sans-serif;
-    color: #C69214;
-    font-size: 32px;
-    display: flex;
-    font-weight: bold;
-}
-
-.logo-image {
-    width: 40px; /* Adjust the width as needed */
-    margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .nav {
@@ -82,6 +55,7 @@
     background-color: #C69214;
 }
 
+/* Style for the navigation menu */
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -94,54 +68,13 @@
 }
 
 .nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-.nav ul li:hover ul {
-    display: block;
-}
-
-.nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    padding: 0;
-    width: 150px; /* Set a fixed width for the dropdown menu */
-}
-
-.nav ul li ul li {
-    display: block;
-}
-
-.nav ul li ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/*
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav ul li {
-    display: inline;
-    margin-top: 50px;
-}
-
-.nav ul li a {
     text-decoration: none;
     padding: 20px 30px;
     border-radius: 5px;
     margin: 0 5px;
     background-color: #fff;
     transition: background-color 0.3s;
+    display: inline-block;
 }
 
 .nav ul li a:hover {
@@ -157,28 +90,32 @@
     position: absolute;
     background-color: #fff;
     padding: 0;
-    width: 100px;
+    width: 150px; /* Set a fixed width for the dropdown menu */
+    left: 0; /* Left-align the dropdown menu */
 }
 
 .nav ul li ul li {
     display: block;
-    margin-top: 50px; 
-    width: 100px;
+    margin-top: 5px; /* Add margin-top to create space between dropdown options */
 }
 
 .nav ul li ul li a {
-    text-decoration: none;
-    padding: 20px 30px;
+    display: block;
     border-radius: 5px;
     margin: 0 5px;
     background-color: #fff;
     transition: background-color 0.3s;
+    padding: 20px 30px;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+    font-size: 14px; /* Adjust font size as needed */
 }
 
 .nav ul li ul li a:hover {
     background-color: #C69214;
 }
-*/
 
 .section {
     padding: 20px;
