@@ -78,7 +78,7 @@
 
 .nav ul li {
     display: inline;
-    margin-top: 30px; /* Add margin-top to create space between dropdown options */
+    margin-top: 50px; /* Add margin-top to create space between dropdown options */
 }
 
 .nav ul li a {
@@ -103,12 +103,13 @@
     position: absolute;
     background-color: #fff;
     padding: 0;
-    width: 150px; /* Set a fixed width for the dropdown menu */
+    width: 100px; /* Set a fixed width for the dropdown menu */
 }
 
 .nav ul li ul li {
     display: block;
-    margin-top: 30px; /* Add margin-top to create space between dropdown options */
+    margin-top: 50px; /* Add margin-top to create space between dropdown options */
+    width: 100px; /* Set a fixed width for the dropdown menu */
 }
 
 .nav ul li ul li a {
