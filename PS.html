@@ -125,6 +125,7 @@
 
     <script>
         document.getElementById("submit-button").addEventListener("click", submitPassword); 
+        document.getElementById("submit-button").addEventListener("keypress", submitPassword2(event)); 
 
         function submitPassword() {
             var password = document.getElementById("password-input").value;
@@ -133,6 +134,19 @@
                 document.getElementById("content").style.display = "block";
             } else {
                 alert("Incorrect password. Please try again.");
+            }
+        }
+
+        function submitPassword2(event){
+            event.preventDefault();
+            if (event.key === "Enter") {
+                var password = document.getElementById("password-input").value;
+                if (password === "FCCR") {
+                    document.getElementById("password-form").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                } else {
+                    alert("Incorrect password. Please try again.");
+                }
             }
         }
     </script>
