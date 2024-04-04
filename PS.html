@@ -140,10 +140,11 @@
           if (event.key === "Enter") {
             event.preventDefault();
             var password = document.getElementById("password-input").value;
+            alert(password);
             if (password === "FCCR") {
                 document.getElementById("myBtn").click();
             }else{
-                alert("Incorrect Password.")
+                alert("Incorrect Password.");
             }
           }
         });
