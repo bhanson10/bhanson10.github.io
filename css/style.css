@@ -133,13 +133,7 @@
     transition: background-color 0.3s;
     padding: 20px 30px;
     text-decoration: none;
-    text-align: left;
-    /*
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px; 
-    */
+    text-align: center;
 }
 
 .nav ul li ul li a:hover {
