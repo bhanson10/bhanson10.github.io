@@ -45,7 +45,7 @@
         <h2>Please enter password to access content:</h2>
         <form id="password-form">
             <input type="password" id="password-input" placeholder="Enter password" required>
-            <button type="myBtn" onclick="javascript:alert('Hello World!')">Submit</button>
+            <button type="submit-button" onclick="submit()">Submit</button>
         </form>
     </div>
 
@@ -134,20 +134,26 @@
         <br><br><br>
     </div>
 
-    <script>
-        var input = document.getElementById("myInput");
+    <script>	
+        var input = document.getElementById("password-input");
         input.addEventListener("keypress", function(event) {
           if (event.key === "Enter") {
             event.preventDefault();
             var password = document.getElementById("password-input").value;
-            alert(password);
-            if (password === "FCCR") {
-                document.getElementById("myBtn").click();
-            }else{
-                alert("Incorrect Password.");
+            if(password === 'FCCR'){
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
             }
           }
         });
+        
+        function submit(){
+          var password = document.getElementById("password-input").value;
+          if(password === 'FCCR'){
+            document.getElementById("password-form").style.display = "none";
+            document.getElementById("content").style.display = "block";
+          }
+        }
     </script>
     
     <!-- <script>
