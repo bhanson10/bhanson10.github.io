@@ -173,7 +173,6 @@
     width: 300px;
     padding: 10px;
     margin-bottom: 10px;
-    justify-content: center;
 }
 
 #submit-button {
@@ -182,5 +181,4 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    justify-content: center;
 }
