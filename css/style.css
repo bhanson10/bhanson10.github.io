@@ -168,16 +168,12 @@
     width: 27%;
 }
 
-#password-form {
+#password-input {
     margin: 100px auto;
     width: 300px;
-    text-align: center;
-}
-
-#password-input {
-    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #submit-button {
