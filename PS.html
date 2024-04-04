@@ -41,6 +41,7 @@
         </nav>
     </header>
 
+    <h2 id="password-text"> Entet password to access content </h2>
     <input type="password" id="password-input" placeholder="Enter password" required>
     <button type="submit-button" id="submit-button" onclick="submit()">Submit</button>
 
@@ -123,6 +124,7 @@
     function submit() {
       var password = document.getElementById("password-input").value;
       if (password === "FCCR") {
+        document.getElementById("password-text").style.display = "none";
         document.getElementById("password-input").style.display = "none";
         document.getElementById("submit-button").style.display = "none";
 		document.getElementById("content").style.display = "block";
@@ -137,6 +139,7 @@
 			event.preventDefault();
 			var password = document.getElementById("password-input").value;
 			if(password === "FCCR"){
+                document.getElementById("password-text").style.display = "none";
 				document.getElementById("password-input").style.display = "none";
                 document.getElementById("submit-button").style.display = "none";
 				document.getElementById("content").style.display = "block";
