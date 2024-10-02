@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Benjamin Hanson's Academic Site"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Benjamin L. Hanson"
 description              : &description "personal description"
 url                      : https://bhanson10.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,34 +21,34 @@ repository               : "bhanson10/bhanson10.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "Professional_photo.jpeg"
+  name             : "Benjamin L. Hanson"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Benjamin Hanson is a Ph.D. pre-candidate at UC San Diego, majoring in Aerospace Engineering, with a focus in astrodynamics and nonlinear state estimation. Co-advised by Dr. Thomas Bewley and Dr. Aaron Rosengren, Benjamin is currently pursuing research in the fields of uncertainty propagation and state estimation for artificial satellites in xGEO and deep space. He is a NASA Space Technology Graduate Research Opportunities Fellow, pursuing work in the field of uncertainty propagation for icy-moon missions with Dr. Todd Ely of JPL. In the summer of 2023, Benjamin interned at the Air Force Maui Optical and Supercomputing (AMOS) observatory as a part of the U.S. Air Force Research Lab Summer Faculty Fellowship Program."
+  location         : "La Jolla, CA, USA"
+  employer         : "University of California San Diego"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "blhanson@ucsd.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://https://scholar.google.com/citations?user=DDUBr_kAAAAJ&hl=en&oi=ao"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # URL
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : # URL
+  researchgate     : "https://www.researchgate.net/profile/Benjamin-Hanson-5"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "bhanson10"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
