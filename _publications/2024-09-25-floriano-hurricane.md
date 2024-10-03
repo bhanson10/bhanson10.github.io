@@ -3,7 +3,7 @@ title: "A Novel Policy for Coordinating a Hurricane Monitoring System using a Sw
 collection: publications
 category: manuscripts
 permalink: /publication/2024-09-25-floriano-hurricane
-excerpt: #
+excerpt: ''
 date: 2024-09-25
 venue: 'Engineering Applications of Artificial Intelligence'
 slidesurl: #

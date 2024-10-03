@@ -3,7 +3,7 @@ title: "An Extensible Framework for Probabilistic Search of Stochastically-movin
 collection: publications
 category: manuscripts
 permalink: /publication/2024-04-04-hanson-prob-search
-excerpt: #
+excerpt: ''
 date: 2024-04-04
 venue: 'Communications in Statistics - Theory and Methods'
 slidesurl: #
