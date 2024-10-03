@@ -1,6 +1,6 @@
 ---
 title: "A Novel Policy for Coordinating a Hurricane Monitoring System using a Swarm of Buoyancy-controlled Balloons Trading off Communication and Coverage"
-collection: publications-submitted
+collection: publications_submitted
 category: manuscripts
 permalink: /publication/2024-09-25-floriano-hurricane
 excerpt: ''
