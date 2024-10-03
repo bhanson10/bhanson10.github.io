@@ -1,8 +1,8 @@
 ---
 title: "An Extensible Framework for Probabilistic Search of Stochastically-moving Targets Characterized by Generalized Gaussian Distributions or Experimentally-defined Regions of Interest"
-collection: submitted
+collection: publications
 category: manuscripts
-permalink: /submitted/2024-04-04-hanson-prob-search
+permalink: /publications/2024-04-04-hanson-prob-search
 excerpt: ''
 date: 2024-04-04
 venue: 'Communications in Statistics - Theory and Methods'
