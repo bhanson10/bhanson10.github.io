@@ -9,4 +9,4 @@ location: "Pasadena, CA"
 slidesurl: 'http://bhanson10.github.io/files/GBEES_JPL_slides_Final.pdf'
 ---
 
-This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
+<p><a href="http://bhanson10.github.io/files/GBEES_JPL_slides_Final.pdf">Download Slides</a></p></p>
