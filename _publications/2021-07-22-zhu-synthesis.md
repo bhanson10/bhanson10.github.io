@@ -2,7 +2,7 @@
 title: "Synthesis and Propulsion of Magnetic Dimers under Orthogonally Applied Electric and Magnetic Fields"
 collection: publications
 category: manuscripts
-permalink: /publication/2021-07-22-zhu-synthesis
+permalink: /publications/2021-07-22-zhu-synthesis
 excerpt: ''
 date: 2021-07-22
 venue: 'Langmuir'

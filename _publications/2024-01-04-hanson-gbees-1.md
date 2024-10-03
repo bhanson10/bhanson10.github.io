@@ -2,7 +2,7 @@
 title: "State Estimation of Chaotic Trajectories: A Higher-Dimensional, Grid-Based, Bayesian Approach to Uncertainty Propagation"
 collection: publications
 category: conferences
-permalink: /publication/2024-01-04-hanson-gbees-1
+permalink: /publications/2024-01-04-hanson-gbees-1
 excerpt: ''
 date: 2024-01-04
 venue: 'AIAA SCITECH 2024 Forum'
