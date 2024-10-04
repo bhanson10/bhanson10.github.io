@@ -8,6 +8,9 @@ main:
   - title: "GBEES"
     url: /GBEES.pdf
 
+  - title: "GBEES-Hash"
+    url: /GBEES-hash.pdf
+
   - title: "Probabilistic Search"
     url: /PS.html
 
