@@ -7,7 +7,7 @@ excerpt: ''
 date: 2024-04-04
 venue: 'Communications in Statistics - Theory and Methods'
 slidesurl: #
-paperurl: 'http://bhanson10.github.io/files/cstm_prob_search.pdf'
+paperurl: #
 citation: '<strong>B. L. Hanson</strong>, M. Zhao, T. R. Bewley &quot;An Extensible Framework for Probabilistic Search of Stochastically-moving Targets Characterized by Generalized Gaussian Distributions or Experimentally-defined Regions of Interest,&quot; Submitted to <i>Communications in Statistics - Theory and Methods</i>, 2024.'
 ---
 
