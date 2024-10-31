@@ -7,7 +7,7 @@ excerpt: ''
 date: 2024-09-25
 venue: 'Engineering Applications of Artificial Intelligence'
 slidesurl: #
-paperurl: #
+paperurl: 'https://authors.elsevier.com/c/1k0Vk3OWJ98gwJ'
 citation: 'B. R. O. Floriano, <strong>B. Hanson</strong>, T. Bewley, J. Y. Ishihara, H. C. Ferreira, &quot;A Novel Policy for Coordinating a Hurricane Monitoring System using a Swarm of Buoyancy-controlled Balloons Trading off Communication and Coverage,&quot; Submitted to <i>Engineering Applications of Artificial Intelligence</i>, 2024.'
 ---
 
