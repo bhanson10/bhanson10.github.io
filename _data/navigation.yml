@@ -19,18 +19,6 @@ main:
 
   - title: "Talks"
     url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
     
   - title: "CV"
-    url: /Benjamin_Hanson_CV_2024.pdf
-    
-  # - title: "Guide"
-  #   url: /markdown/
+    url: /Benjamin_Hanson_CV_2025.pdf
