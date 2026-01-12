@@ -1,0 +1,74 @@
+---
+layout: archive
+title: "2024 YR4"
+permalink: /YR4.html
+author_profile: true
+---
+
+<body>
+    <!-- <h2 id="password-text"> Enter password to access content </h2>
+    <center>
+        <input type="password" id="password-input" placeholder="Enter password" required>
+        <button type="submit-button" id="submit-button" onclick="submit()">Submit</button>
+    </center> -->
+    
+
+    <!-- <div id="content" style="display: none;"> -->
+    <div id="content" style="display: block;">
+        A problem of particular interest to life on Earth is the motion of large asteroids (known in this context as near-Earth objects) through space, which if they collide with Earth can lead to massive destruction and, possibly, another mass extinction event. This class of problems focuses specifically on “unlikely” events, out in the “tail” of the associated probability distributions. The odds that any given large asteroid will hit Earth, based on what we know many years in advance of such a collision, is generally quite small, but there are lots of such asteroids, and the potential consequences of a single such collision with Earth is quite large indeed, as seen in fossil records. With a sufficiently early and accurate prediction of the probability of such events, it is possible to better prepare, and potentially to redirect the trajectory of an asteroid of concern with a small nudge, averting potential disaster, as demonstrated in the Dart Asteroid Redirection Test. Accurate prediction of unlikely events out in the (non-Gaussian) tails of probability distributions, years in advance of any possible such collision, is essential for this to be done properly; the present work addresses this need. <br><br>
+
+        One near-Earth object of particular interest, dubbed 2024 YR4, currently has (according to our calculations) a 4% chance of colliding with Earth's moon on Dec 22, 2032. YR4 currently has a negligible probability of hitting Earth on that pass (an older estimate, made in Feb 2025, put this chance at as high as 3.1%). Given the proximity of the moon to the Earth, the reader can well appreciate the importance of getting such predictions right; if YR4 were to hit Earth (in some future pass near Earth), the explosion would be equivalent, roughly, to that of 500 Hiroshima bombs.<br><br>
+
+        YR4 will also (safely) pass, relatively close (within 5 million miles) to Earth on Dec 17, 2028; if as a species humans deemed YR4's trajectory as an imminent threat to life on Earth (at this time, it is NOT), and if we were to attempt a redirection (“nudge”) of YR4's orbit around the sun, that would be the ideal time to do it (that is, 4 years in advance of any potential collision). Our study of YR4's potential collision with our moon on Dec 22, 2032, and what it would take to redirect it to avoid such a collision, better prepares us to refine our prediction (and, our asteroid redirection) infrastructure for the (many) future highly unlikely (yet, each potentially devastating) events of this type.<br><br>
+
+        This brings us to our most recent work: the hybrid estimation of a potential YR4 lunar impact in 2032. In our <a href="https://www.researchsquare.com/article/rs-8196369/v1">recent journal article</a>, we propose a novel hybrid strategy to uncertainty propagation that leverages the efficiency of a moment-based method (generally some Kalman filter variant, like the UKF) when the uncertainty is nearly Gaussian, with the accuracy of a sample-based method (generally a Lagrangian or Eulerian filter, like the PF) when the uncertainty is highly non-Gaussian. The key to this hybrid approach is inferring higher-order information of the true uncertainty from the Kalman filter abstraction in the moment method, switching to the sample method automatically when this information indicates divergence from Gaussianity, and subsequently switching back to the moment method automatically when the information it provides indicates a return Gaussianity.<br><br>
+
+        Previous hybrid filtering techniques [e.g., <a href="https://link.springer.com/article/10.1007/s40295-017-0114-8">Raihan and Chakravorty (2018)</a>, <a href="https://academic.oup.com/biomet/article-abstract/100/4/781/212825?redirectedFrom=fulltext&login=false">Frei and Künsch (2013)</a>] rely on measurement corrections to trigger this transition. However, when measurements are sparse (as is the case for YR4 and other distant objects, out of view of Earth-based telescopes) these strategies are inapplicable. Our hybrid filter, dubbed the UKF/PF filter (that is, pairing the UKF for the sample method with the PF for moment method), uses a measure of skew derived from the weighted sigma points propagated by the UKF to indicate when the uncertainty in the moment calculation is diverging from Gaussianity, and a measure of normality applied to the large sample propagated by the PF to indicate when the uncertainty in the sample calculation is converging back to Gaussianity.
+        
+        <p class="body">
+            In the video below, our hybrid UKF/PF method is demonstrated for the estimation of YR4. As YR4 approaches its first close approach with the Earth-Moon system in Dec 2028, the UKF/PF method autonomously switches from UKF mode to PF mode, effectively capturing the evolution of the non-Gaussian uncertainty in this portion of YR4's trajectory. After the close approach, the UKF/PF method autonomously switches from PF mode back to the (more efficient) UKF mode for the quiescent, slower-moving portion of the trajectory. Later in the video, we demonstrate that the UKF/PF method accurately estimates the potential lunar impact corridor of YR4 as compared to a large (more expensive) MC, achieving a speedup of nearly 5x. This work successfully demonstrates the capability of our hybrid strategy to leverage, automatically, the respective strengths of the (efficient) moment method and the (accurate) sample method that it incorporates. <br><br>
+        </p>
+        <center>
+            <video poster="http://bhanson10.github.io/images/YR4_thumbnail.png" style="outline:none; width:99%;" controls>
+                <source src="http://bhanson10.github.io/files/UKFPF_YR4_Animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </center>   
+        <br><br><br>
+
+        Future work will replace the moment and sample methods used by the proposed hybrid approach to further improve both performance and accuracy. Specifically, we plan on replacing the sample method with GBEES for the reasons discussed previously. Additionally, the moment method may also be replaced by an extension of the UKF that uses a Conjugate Unscented Transform to match the third and fourth central moments of the random variable. This will allow the hybrid filter to use the more efficient moment mode for longer while still maintaining accuracy. <br><br>
+
+        Although we applied the UKF/PF method to the uncertainty propagation of a natural satellite, this general (hybrid) method also demonstrates considerable potential for use in spacecraft navigation. To date, Lagrangian and Eulerian filters have been underutilized for spacecraft state estimation due to their computational expense in 6-dimensional problems. Kalman filters have mostly sufficed thus far, requiring frequent measurement corrections from ground stations. However, there are many trajectories of interest (particularly, when exploring the moons around other planets in our solar system, in the continuing search for extraterrestrial life) in which state uncertainty may become highly non-Gaussian between measurement updates. In such cases, a hybrid filter allows for an automatic and accurate transition from moment to sample methods only when necessary, saving significant computational resources while still accurately capturing the portions of such trajectories with non-Gaussian uncertainty.
+    </div>
+
+    
+ <!-- <script>
+    function submit() {
+      var password = document.getElementById("password-input").value;
+      if (password === "FCCR") {
+        document.getElementById("password-text").style.display = "none";
+        document.getElementById("password-input").style.display = "none";
+        document.getElementById("submit-button").style.display = "none";
+		document.getElementById("content").style.display = "block";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    };
+    
+    var input = document.getElementById("password-input");
+	input.addEventListener("keypress", function(event){
+		if (event.key === "Enter") {
+			event.preventDefault();
+			var password = document.getElementById("password-input").value;
+			if(password === "FCCR"){
+                document.getElementById("password-text").style.display = "none";
+				document.getElementById("password-input").style.display = "none";
+                document.getElementById("submit-button").style.display = "none";
+				document.getElementById("content").style.display = "block";
+			} else {
+				alert("Incorrect password. Please try again.");
+			}
+		}
+	});
+ </script> -->
+</body>
