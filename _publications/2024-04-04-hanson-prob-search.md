@@ -7,7 +7,7 @@ excerpt: ''
 date: 2024-04-04
 venue: 'Communications in Statistics - Theory and Methods'
 slidesurl: #
-paperurl: #
+paperurl: 'https://www.tandfonline.com/doi/full/10.1080/03610926.2024.2439999'
 citation: '<strong>Hanson, B.L.</strong>, Zhao, M., Thomas, R.B.: An extensible framework for the probabilistic search of stochastically-moving targets characterized by generalized Gaussian distributions or experimentally-defined regions of interest. Communications in Statistics - Theory and Methods <strong>54</strong>(17), 5480–5505 (2025)'
 ---
 
