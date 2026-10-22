@@ -1,0 +1,13 @@
+---
+title: "Gaussianity Validity and Hybrid Estimation in the Circular Restricted Three-Body Problem"
+collection: publications
+category: conferences
+permalink: /publications/2026-07-26-hybrid-cr3bp
+excerpt: ''
+date: 2026-07-26
+venue: '2026 AAS/AIAA Astrodynamics Specialist Conference'
+paperurl: 'https://www.researchgate.net/publication/410698810_Gaussianity_Validity_and_Hybrid_Estimation_in_the_Circular_Restricted_Three-Body_Problem'
+citation: '<strong>Hanson, B.L.</strong>, Rosengren, A.J., Bewley, T.R., Ely, T.A.: Gaussianity Validity and Hybrid Estimation in the Circular Restricted Three-Body Problem. In: 2026 AAS/AIAA Astrodynamics Specialist Conference, (2026)'
+---
+
+Abstract: Gaussianity validity time (GVT), the amount of time state uncertainty can reasonably be approximated as Gaussian, is essential to the assumptions underlying linearized spacecraft navigation techniques yet is rarely computed explicitly. Traditional Monte Carlo (MC)-based approaches to estimating GVT are computa-tionally inefficient, as they depend on large sample sizes and complex multivariate statistical tests. For the two-body problem, there exist predictable regimes in the evolution of state uncertainty, dependent on the proximity to the central body, which may be exploited to efficiently compute GVT. In particular, there exists a strong relationship between a MC-based normality statistic and a lightweight, unscented transform (UT)-based skewness metric. Consequently, the UT alone can efficiently predict GVT in the two-body problem. This relationship has yet to be explored for periodic orbits in the the circular restricted three-body problem (CR3BP). In this paper, orbits from ten different periodic families in the Saturn-Enceladus system are analyzed via tandem MC and UT propagations, with both Gaussianity measures tracked throughout. As in the two-body problem, the evolution of state uncertainty for periodic orbits in the CR3BP exhibits predictable behavior governed by proximity to the primary bodies, and a strong relationship is observed between the MC statistic and the UT metric. This relationship is validated via the UT-predicted GVT of two independent CR3BP periodic orbits, a highly inclined Saturn-Enceladus halo orbit and an Earth-Moon 9:2 near rectilin-ear halo orbit. In both cases, the UT estimates agree with the MC estimates to within minutes while requiring a fraction of the computational effort. Building on this validation, a modified version of the previously-developed unscented Kalman filter/particle filter hybrid estimation framework is extended to the CR3BP, enabling efficient, accurate estimation for periodic orbits.
